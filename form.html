@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Complexe formulier</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <form name="contact" method="POST" data-netlify="true">
+        <fieldset>
+            <legend>Uw Persoonlijke gegevens</legend>
+            <ol>
+                <li>
+                    <label for="naam">Naam:</label>
+                    <input id="naam" name="naam" type="text" placeholder="Voor- en achternaam" required>
+                </li>
+                <li>
+                    <label for="email">E-mail:</label>
+                    <input id="email" name="email" type="email" placeholder="iemand@domein.nl" required="@">
+                </li>
+                <li>
+                    <label for="tel">telefoon:</label>
+                    <input id="tel" name="tel" type="tel" placeholder="bijv.066669999" required>
+                </li>
+                <li>
+                    <label for="number">Uw leeftijd:</label>
+                    <input id="number" name="number" type="number" min="18" max="99" required>
+                </li>
+                <li>
+                    <label for="date">Uw geboortedatum:</label>
+                    <input id="date" name="date" type="date" required>
+                </li>
+                <li><label for="gender" id="gender">
+                        <p>Uw geslacht:</p>
+                    </label></li>
+                <li>
+                    <!--Label gender misschien toch een andere element geven bijv een H4 of een p?-->
+                    <input id="male" type="radio" name="gender" value="male">
+                    <label for="male">Man</label>
+                </li>
+                <li><input id="female" type="radio" name="gender" value="female">
+                    <label for="female">Vrouw</label>
+                </li>
+                <li><input id="other" type="radio" name="gender" value="other">
+                    <label for="other">Zeg ik liever niet</label>
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>Keukenweetjes</legend>
+            <ol>
+                <li>
+                    <label for="checkbox">
+                        <p>favoriete keukens:</p>
+                    </label>
+                </li>
+                <!--Label checkbox misschien toch een andere element geven bijv een H4 of een p?-->
+                <li><input id="frans" type="checkbox" name="checkbox">
+                    <label for="frans">Frans</label>
+                </li>
+                <li><input id="italiaans" type="checkbox" name="checkbox"> Italiaans
+                    <label for="italiaans">Italiaans</label>
+                </li>
+                <li><input id="spaans" type="checkbox" name="checkbox">
+                    <label for="spaans">Spaans</label>
+                </li>
+                <li><input id="arabisch" type="checkbox" name="checkbox">
+                    <label for="arabisch">Arabisch</label>
+                </li>
+                <li>
+                    <label for="color">favoriete schortkleur:</label>
+                    <input id="color" name="color" type="color" required>
+                </li>
+                <li>
+                    <label for="biografy">
+                        <p>biografie:</p>
+                    </label><br>
+                    <textarea id="biografy" name="biografy" rows="2" required>Vertel wat over uzelf...</textarea>
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>Receptenweetjes</legend>
+            <ol>
+                <li>
+                    <label for="file">
+                        <p>upload je laatste recept:</p>
+                    </label>
+                    <input type="file" id="file" name="file">
+                </li>
+                <li>
+                    <label for="url">
+                        <p>URL naar receptenwebsite:</p>
+                    </label>
+                    <input type="url" id="url" name="url" placeholder="https://voorbeeld.com" pattern="https://.*"
+                        size="30" required>
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>Gegevens verzenden</legend>
+            <input class="button" type="submit" value="verzenden">
+            <input class="button" type="reset">
+        </fieldset>
+    </form>
+</body>
+
+</html>
