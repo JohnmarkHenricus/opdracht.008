@@ -1,0 +1,89 @@
+html, body, form, fieldset, legend, ol, li p{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-image: url('https://img.lovepik.com/photo/50177/8646.jpg_wh860.jpg');
+    background-image: ;
+  }
+
+form{
+    background-color: #789AF3;
+    padding: 20ex;
+    width: 700px;
+    margin: auto;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+}
+form fieldset{
+    border: none;
+    margin-bottom: 10px;
+}
+form fieldset :last-of-type{
+    margin-bottom: 0px;
+}
+form legend{
+    color:#092368;
+    font-size: 1.5 em;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+form ol li{
+    background-color: #C0D0FA;
+    background-color: rgba(255, 255, 255,.4);
+    border-color: #F1F4FE;
+    border-color: rgba(255, 255, 255,.8);
+    border-style: solid;
+    border-width: 2px;
+    line-height: 2em;
+    list-style: none;
+    padding:5px 10px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    
+}
+form p{
+    color:#092368;
+    font-size: 1.5 em;
+    font-weight: bold;
+}
+h1{
+    color:#092368;
+    border-style: solid;
+    border-width: 20px;
+    width: auto;
+}
+h2{
+    color:#092368;
+}
+li{
+    color:#092368;
+    font-size: 1.5 em;
+    font-weight: bold;
+}
+a {
+    
+}
+.button{
+    background-color:#092368 ;
+    color: #F1F4FE;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.2 em;
+    cursor: pointer;
+    display: inline;
+    margin: auto;
+ 
+}
+
+footer{
+    
+        color:#092368;
+        border-style: solid;
+        border-width: 20px;
+        width: auto;
+}
